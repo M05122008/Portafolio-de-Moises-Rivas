@@ -41,6 +41,9 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--texto);
     font-size: 1.35rem;
     font-weight: bold;
@@ -48,7 +51,14 @@ body {
     letter-spacing: 1px;
 }
 
-.logo::first-letter{
+.logo-image {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo span::first-letter{
     font-size: 1.50rem;
     color: var(--azul);
 }
