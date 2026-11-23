@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Moises Rivas</title>
     <meta name="description" content="Portafolio de Moises Rivas, estudiante de informática: desarrollo, sistemas y soporte técnico." />
@@ -16,10 +17,11 @@
                 <span></span><span></span><span></span>
             </label>
             <ul class="nav-links">
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Sobre">Sobre mí</a></li>
-                <li><a href="#Experiencia">Experiencia</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#Inicio"><i class="fa-solid fa-house" aria-hidden="true"></i><span>Inicio</span></a></li>
+                <li><a href="#Sobre"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Sobre mí</span></a></li>
+                <li><a href="#Habilidades"><i class="fa-solid fa-code" aria-hidden="true"></i><span>Habilidades</span></a></li>
+                <li><a href="#Proyectos"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Proyectos</span></a></li>
+                <li><a href="#Contacto"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Contacto</span></a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +29,7 @@
     <main id="inicio">
         <section class="hero" id="Inicio">
             <div class="foto-perfil">
-                <img src="Fotos/WhatsApp Image 2026-10-02 at 12.26.41 AM.jpeg" alt="Foto de Moises Rivas" class="foto">
+                <img src="Fotos/foto-perfil.jpg" alt="Foto de Moises Rivas" class="foto">
             </div>
             <div class="hero-content">
                 <p class="saludo">Hola, soy <span aria-hidden="true">&#128075;</span></p>
@@ -38,29 +40,98 @@
                 <a href="#Contacto" class="hero-button">Conoce más de mí <span aria-hidden="true">&#8595;</span></a>
             </div>
         </section>
+        <section class="section about" id="Sobre">
+            <div class="section-heading">
+                <p class="eyebrow">Sobre mí</p>
+                <h2>Conoce más sobre mi camino</h2>
+            </div>
+            <div class="about-grid">
+                <p>Soy estudiante de la <b>Universidad Politécnica Territorial Andrés Eloy Blanco</b>. Me estoy formando en el área de informática y disfruto convertir ideas en experiencias web claras, modernas y fáciles de usar.</p>
+                <p>Actualmente sigo fortaleciendo mis conocimientos de frontend y programación mediante proyectos personales, cursos y práctica constante.</p>
+            </div>
+        </section>
+
+        <section class="section" id="Habilidades">
+            <div class="section-heading">
+                <p class="eyebrow">Lo que hago</p>
+                <h2>Habilidades y servicios</h2>
+            </div>
+            <div class="cards-grid">
+                <article class="info-card">
+                    <img src="Fotos/frontend.jpg" alt="Desarrollo frontend" class="card-image">
+                    <h3>Desarrollo frontend</h3>
+                    <p>Creo interfaces responsive con HTML, CSS y JavaScript, cuidando la estructura y la experiencia en cada pantalla.</p>
+                </article>
+                <article class="info-card">
+                    <img src="Fotos/diseno.webp" alt="Diseño de interfaces" class="card-image">
+                    <h3>Diseño de interfaces</h3>
+                    <p>Organizo contenido y estilos para construir páginas visualmente atractivas, accesibles y fáciles de navegar.</p>
+                </article>
+                <article class="info-card">
+                    <img src="Fotos/programacion.webp" alt="Programación" class="card-image">
+                    <h3>Programación</h3>
+                    <p>Trabajo con Python y fundamentos de lógica para resolver problemas y seguir creciendo como desarrollador.</p>
+                </article>
+            </div>
+            <div class="skill-list" aria-label="Tecnologías">
+                <span>HTML5</span><span>CSS3</span><span>Python</span><span>Responsive design</span>
+            </div>
+        </section>
+
+        <section class="section projects" id="Proyectos">
+            <div class="section-heading">
+                <p class="eyebrow">Mi trabajo</p>
+                <h2>Proyectos destacados</h2>
+            </div>
+            <article class="project-card">
+                <div>
+                    <span class="project-tag">En desarrollo</span>
+                    <h3>Sitio web para la Unidad Educativa Armando Reverón</h3>
+                    <p>Proyecto académico enfocado en crear un espacio web informativo, ordenado y útil para la comunidad educativa.</p>
+                    <div class="project-tech"><span>HTML</span><span>CSS</span><span>Diseño web</span></div>
+                </div>
+                <div class="project-placeholder" aria-hidden="true">&lt;/&gt;</div>
+            </article>
+        </section>
+
+        <section class="section contact" id="Contacto">
+            <div class="section-heading">
+                <p class="eyebrow">Hablemos</p>
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>Envíame un mensaje y conversemos sobre tu idea.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <a href="mailto:elmoises0512@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>elmoises0512@gmail.com</a>
+                    <p>Estoy disponible para aprender, colaborar y participar en nuevos proyectos.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100082364610864" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.instagram.com/moi_r0512/?__pwa=1" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                </div>
+                <form class="contact-form" action="mailto:elmoises0512@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-row">
+                        <label for="nombre">Nombre
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </label>
+                        <label for="email">Correo electrónico
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </label>
+                    </div>
+                    <label for="asunto">Asunto
+                        <input type="text" id="asunto" name="asunto" placeholder="¿En qué puedo ayudarte?" required>
+                    </label>
+                    <label for="mensaje">Mensaje
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                    </label>
+                    <button type="submit" class="submit-button">Enviar mensaje <span aria-hidden="true">&rarr;</span></button>
+                </form>
+            </div>
+        </section>
     </main>
-    <div class="Sobre" id="Sobre">
-        <h2>Conoce Más Sobre Mí</h2>
-        <p>Soy estudiante en la <b>Universidad Politécnica Territorial Andrés Eloy Blanco</b>, cada vez me capacito para así desarrollar nuevas habilidades en la parte del frontend e ir aprendiendo cada vez más en este mundo de la programación.</p>
-    </div>
-    <div class="experiencia" id="Experiencia">
-        <h2>Experiencia</h2>
-        <p>He realizado cursos de <b>Programación I</b> en donde nos han enseñado los siguientes lenguajes de programación:</p>
-        <ul>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-    </div>
-    <footer class="footer" id="Contacto">
-        <h2>Contacto</h2>
-        <p>Si deseas contactarme, puedes enviarme un correo electrónico a <a href="mailto:elmoises0512@gmail.com">elmoises0512@gmail.com</a></p>
-        <p>También puedes encontrarme en mis redes sociales:</p>
-        <ul class="social-links">
-            <li><a href="https://www.facebook.com/profile.php?id=100082364610864" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://www.instagram.com/moi_r0512/?__pwa=1" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        </ul>
-        <p>&copy; 2026 Moises Rivas. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <p>&copy; 2026 Moises Rivas. Hecho con dedicación.</p>
+        <a href="#Inicio">Volver arriba &uarr;</a>
     </footer>
 </body>
 </html>
